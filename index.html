@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="screen" readonly>
+    <table>
+      <tr>
+        <td><button class="btn btn-yellow" onclick="buttonClick('/')">/</button></td>
+        <td><button class="btn btn-yellow" onclick="buttonClick('*')">*</button></td>
+        <td><button class="btn btn-yellow" onclick="buttonClick('-')">-</button></td>
+        <td><button class="btn btn-yellow" onclick="buttonClick('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-black" onclick="buttonClick('7')">7</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('8')">8</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('9')">9</button></td>
+        <td><button class="btn btn-yellow" onclick="buttonClick('%')">%</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-black" onclick="buttonClick('4')">4</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('5')">5</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('6')">6</button></td>
+        <td><button class="btn btn-clear" onclick="buttonClick('C')">C</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-black" onclick="buttonClick('1')">1</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('2')">2</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('3')">3</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('CE')">CE</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button class="btn btn-black" onclick="buttonClick('0')">0</button></td>
+        <td><button class="btn btn-black" onclick="buttonClick('.')">.</button></td>
+        <td><button class="btn btn-equal" onclick="buttonClick('=')">=</button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
